@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidronort – Poços Artesianos em Arapoti-PR | Perfuração, Manutenção e Outorga</title>
+<meta name="description" content="Hidronort Poços Artesianos: perfuração, manutenção, análise de água e outorga em Arapoti e região norte do Paraná. Há mais de 25 anos. Geólogo CREA-PR. Parceria Águas Claras.">
+<meta name="keywords" content="poços artesianos arapoti, perfuração poço paraná, manutenção poço artesiano, outorga poço, análise água arapoti, hidronort, águas claras poços">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Hidronort Poços Artesianos">
+<meta property="og:title" content="Hidronort – Poços Artesianos | Arapoti-PR">
+<meta property="og:description" content="Mais de 25 anos perfurando e mantendo poços artesianos em Arapoti e toda a região norte do Paraná. Geólogo responsável CREA-PR.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="geo.region" content="BR-PR">
+<meta name="geo.placename" content="Arapoti, Paraná, Brasil">
+<link rel="canonical" href="https://www.hidronort.com.br/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Hidronort Poços Artesianos",
+  "description": "Especialistas em perfuração, manutenção e regularização de poços artesianos há mais de 25 anos.",
+  "url": "https://www.hidronort.com.br",
+  "telephone": "+55-43-3557-3232",
+  "email": "contato@hidronort.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Osvaldo Ploguer, 630",
+    "addressLocality": "Arapoti",
+    "addressRegion": "PR",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -24.157,
+    "longitude": -49.828
+  },
+  "openingHours": "Mo-Fr 08:00-18:00",
+  "foundingDate": "1999",
+  "areaServed": "Norte do Paraná, Brasil",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços de Poços Artesianos",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Perfuração de Poços Artesianos"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Manutenção e Limpeza de Poços"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Outorga e Licenciamento Ambiental"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Análise Laboratorial da Água"}}
+    ]
+  }
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --azul:       #1A4F7A;
+    --azul-light: #2470A8;
+    --azul-deep:  #0D2F4A;
+    --agua:       #4EAFD6;
+    --agua-pale:  #D4EEF9;
+    --branco:     #FFFFFF;
+    --cinza-bg:   #F5F8FC;
+    --cinza-mid:  #E2EDF5;
+    --cinza-text: #4A5568;
+    --cinza-dark: #1A202C;
+    --accent:     #F0A500;
+
+    --font-display: 'Sora', sans-serif;
+    --font-body:    'Inter', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--cinza-dark); background: var(--branco); overflow-x: hidden; }
+
+  /* ── ANIMAÇÕES ── */
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.3)} }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+  @keyframes slideRight { from{opacity:0;transform:translateX(-40px)} to{opacity:1;transform:translateX(0)} }
+  @keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+  @keyframes waterRipple { 0%{transform:scale(1);opacity:.6} 100%{transform:scale(2.5);opacity:0} }
+  @keyframes dropFall { 0%{transform:translateY(-20px);opacity:0} 60%{opacity:1} 100%{transform:translateY(0);opacity:1} }
+  @keyframes countUp { from{opacity:0;transform:scale(.8)} to{opacity:1;transform:scale(1)} }
+  @keyframes shimmer { 0%{background-position:-200% center} 100%{background-position:200% center} }
+  @keyframes rotateSlow { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+  @keyframes barGrow { from{transform:scaleX(0)} to{transform:scaleX(1)} }
+
+  .animate-fadeUp { animation: fadeUp .7s ease forwards; }
+  .animate-fadeIn { animation: fadeIn .8s ease forwards; }
+  .animate-slideRight { animation: slideRight .7s ease forwards; }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: .1s; }
+  .reveal-delay-2 { transition-delay: .2s; }
+  .reveal-delay-3 { transition-delay: .3s; }
+  .reveal-delay-4 { transition-delay: .4s; }
+  .reveal-delay-5 { transition-delay: .5s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(13,47,74,0.95);
+    backdrop-filter: blur(16px);
+    padding: 0 5%;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+    border-bottom: 1px solid rgba(78,175,214,0.2);
+    transition: background .3s, box-shadow .3s;
+  }
+  nav.scrolled { background: rgba(13,47,74,0.99); box-shadow: 0 4px 32px rgba(0,0,0,.25); }
+  .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .nav-logo img { height: 38px; width: auto; object-fit: contain; transition: transform .2s; }
+  .nav-logo:hover img { transform: scale(1.05); }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color .2s; position: relative; padding-bottom: 4px; }
+  .nav-links a::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--agua); transform:scaleX(0); transition:transform .2s; transform-origin:left; }
+  .nav-links a:hover { color: var(--agua); }
+  .nav-links a:hover::after { transform:scaleX(1); }
+  .nav-cta {
+    background: var(--agua); color: var(--azul-deep);
+    padding: 10px 22px; border-radius: 8px;
+    font-weight: 700; font-size: 0.85rem; text-decoration: none;
+    transition: background .2s, transform .15s, box-shadow .2s;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { background: #6DC8E8; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(78,175,214,.4); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--azul-deep) 0%, var(--azul) 55%, #1E6491 100%);
+    display: flex; align-items: center;
+    padding: 100px 5% 60px;
+    position: relative; overflow: hidden;
+  }
+  .hero-bg-anim {
+    position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+  }
+  /* Animated water drops */
+  .drop {
+    position: absolute; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background: rgba(78,175,214,0.12);
+    animation: floatY 4s ease-in-out infinite;
+  }
+  .drop:nth-child(1) { width:320px;height:320px; top:-60px; right:10%; animation-delay:0s; }
+  .drop:nth-child(2) { width:200px;height:200px; top:40%; right:5%; animation-delay:1.5s; opacity:.5; }
+  .drop:nth-child(3) { width:120px;height:120px; bottom:10%; right:25%; animation-delay:.8s; opacity:.3; }
+  /* Ripple rings */
+  .ripple-ring {
+    position: absolute; border-radius: 50%; border: 1px solid rgba(78,175,214,0.15);
+    animation: waterRipple 5s ease-out infinite;
+  }
+  .ripple-ring:nth-child(4) { width:500px;height:500px; top:50%;left:60%;transform:translate(-50%,-50%); animation-delay:0s; }
+  .ripple-ring:nth-child(5) { width:500px;height:500px; top:50%;left:60%;transform:translate(-50%,-50%); animation-delay:2.5s; }
+
+  .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 1200px; margin: 0 auto; width: 100%; position:relative; z-index:1; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(78,175,214,0.15); border: 1px solid rgba(78,175,214,0.35);
+    padding: 6px 16px; border-radius: 99px;
+    font-size: 0.78rem; font-weight: 600; color: var(--agua); letter-spacing: 0.08em;
+    text-transform: uppercase; margin-bottom: 24px;
+    animation: fadeIn .6s ease .2s both;
+  }
+  .hero-badge-dot { width: 7px; height: 7px; background: var(--agua); border-radius: 50%; animation: pulse 2s infinite; }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+    font-weight: 800; line-height: 1.1;
+    color: var(--branco); margin-bottom: 20px;
+    animation: fadeUp .7s ease .3s both;
+  }
+  .hero h1 em { font-style: normal; color: var(--agua); }
+  .hero p {
+    font-size: 1.1rem; line-height: 1.7;
+    color: rgba(255,255,255,0.72); margin-bottom: 36px; max-width: 480px;
+    animation: fadeUp .7s ease .45s both;
+  }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; animation: fadeUp .7s ease .55s both; }
+  .btn-primary {
+    background: var(--agua); color: var(--azul-deep);
+    padding: 14px 28px; border-radius: 10px; font-weight: 700; font-size: 0.95rem;
+    text-decoration: none; transition: all .2s; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { background: #6DC8E8; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(78,175,214,0.4); }
+  .btn-secondary {
+    border: 1.5px solid rgba(255,255,255,0.3); color: var(--branco);
+    padding: 14px 28px; border-radius: 10px; font-weight: 600; font-size: 0.95rem;
+    text-decoration: none; transition: all .2s; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-secondary:hover { border-color: var(--agua); color: var(--agua); }
+  .hero-stats { display: flex; gap: 32px; margin-top: 48px; animation: fadeUp .7s ease .65s both; }
+  .hero-stat-num { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--branco); }
+  .hero-stat-num span { color: var(--agua); }
+  .hero-stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.5); font-weight: 500; margin-top: 2px; }
+  .hero-stat-divider { width: 1px; background: rgba(255,255,255,0.1); }
+
+  /* Hero visual */
+  .hero-visual { position: relative; display: flex; justify-content: center; animation: fadeIn .8s ease .5s both; }
+  .hero-facade-wrap {
+    border-radius: 24px; overflow: hidden;
+    border: 2px solid rgba(78,175,214,0.25);
+    box-shadow: 0 32px 80px rgba(0,0,0,.35);
+    width: 100%; max-width: 460px;
+    position: relative;
+    animation: floatY 6s ease-in-out infinite;
+  }
+  .hero-facade-wrap img { width:100%; display:block; border-radius:22px; }
+  .hero-facade-overlay {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(to top, rgba(13,47,74,.9) 0%, transparent 60%);
+    padding: 28px 24px 24px;
+    border-radius: 0 0 22px 22px;
+  }
+  .facade-overlay-logo { height: 32px; width: auto; filter: brightness(0) invert(1); margin-bottom: 8px; }
+  .facade-overlay-addr { font-size: 0.78rem; color: rgba(255,255,255,0.6); }
+  .facade-overlay-addr strong { color: var(--agua); display: block; font-size: 0.85rem; margin-bottom: 2px; }
+
+  /* ── STRIP ── */
+  .strip {
+    background: var(--agua); padding: 18px 5%;
+    display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap;
+  }
+  .strip-item { display: flex; align-items: center; gap: 10px; color: var(--azul-deep); font-weight: 600; font-size: 0.9rem; transition: transform .2s; cursor: default; }
+  .strip-item:hover { transform: translateY(-2px); }
+  .strip-item svg { width: 18px; height: 18px; stroke: var(--azul-deep); fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* ── SECTION WRAPPER ── */
+  .section { padding: 96px 5%; }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--agua); margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 800; line-height: 1.15; color: var(--azul-deep); margin-bottom: 16px;
+  }
+  .section-subtitle { font-size: 1.05rem; color: var(--cinza-text); line-height: 1.7; max-width: 560px; }
+
+  /* ── SERVIÇOS ── */
+  .services-bg { background: var(--cinza-bg); }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; }
+  .service-card {
+    background: var(--branco); border-radius: 20px; padding: 36px 32px;
+    border: 1.5px solid var(--cinza-mid);
+    transition: all .3s; position: relative; overflow: hidden;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--azul), var(--agua));
+    transform: scaleX(0); transform-origin: left; transition: transform .35s;
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 52px rgba(26,79,122,0.14); border-color: var(--agua); }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-card-icon {
+    width: 52px; height: 52px; background: var(--agua-pale);
+    border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 22px;
+    transition: background .2s, transform .2s;
+  }
+  .service-card:hover .service-card-icon { background: var(--agua); transform: scale(1.1) rotate(-4deg); }
+  .service-card:hover .service-card-icon svg { stroke: white; }
+  .service-card-icon svg { width: 26px; height: 26px; stroke: var(--azul); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke .2s; }
+  .service-card h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--azul-deep); margin-bottom: 12px; }
+  .service-card p { font-size: 0.9rem; color: var(--cinza-text); line-height: 1.7; }
+  .service-tag {
+    display: inline-block; margin-top: 16px;
+    background: var(--agua-pale); color: var(--azul); font-size: 0.75rem; font-weight: 600;
+    padding: 4px 12px; border-radius: 99px;
+  }
+
+  /* ── SOBRE ── */
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .about-timeline { display: flex; flex-direction: column; gap: 0; }
+  .timeline-item { display: flex; gap: 20px; }
+  .timeline-left { display: flex; flex-direction: column; align-items: center; }
+  .timeline-dot {
+    width: 14px; height: 14px; border-radius: 50%;
+    background: var(--agua); border: 3px solid var(--azul-light); flex-shrink: 0;
+    transition: transform .2s, background .2s;
+  }
+  .timeline-item:hover .timeline-dot { transform: scale(1.4); background: var(--accent); }
+  .timeline-line { flex: 1; width: 2px; background: var(--cinza-mid); margin: 4px 0; min-height: 32px; }
+  .timeline-content { padding-bottom: 32px; }
+  .timeline-year { font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; color: var(--agua); margin-bottom: 4px; }
+  .timeline-content p { font-size: 0.92rem; color: var(--cinza-text); line-height: 1.65; }
+  .timeline-content strong { color: var(--azul-deep); }
+  .about-certs {
+    background: var(--azul-deep); border-radius: 20px; padding: 32px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px;
+  }
+  .cert-item { display: flex; flex-direction: column; gap: 4px; }
+  .cert-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.45); font-weight: 600; }
+  .cert-value { font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; color: var(--branco); }
+  .cert-value.agua { color: var(--agua); }
+  .about-numbers { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px; }
+  .about-number-card {
+    background: var(--cinza-bg); border-radius: 16px; padding: 24px 22px;
+    border: 1.5px solid var(--cinza-mid); transition: border-color .2s, transform .2s;
+  }
+  .about-number-card:hover { border-color: var(--agua); transform: translateY(-3px); }
+  .about-number-val { font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; color: var(--azul); line-height: 1; }
+  .about-number-val sup { font-size: 1rem; color: var(--agua); }
+  .about-number-desc { font-size: 0.83rem; color: var(--cinza-text); margin-top: 6px; line-height: 1.4; }
+
+  /* ── PARCEIROS / EQUIP ── */
+  .brands-row {
+    display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 24px;
+    margin-top: 48px;
+  }
+  .brand-pill {
+    background: var(--cinza-bg); border: 1.5px solid var(--cinza-mid);
+    border-radius: 12px; padding: 14px 28px;
+    font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--azul);
+    letter-spacing: 0.04em; transition: all .2s;
+  }
+  .brand-pill:hover { background: var(--agua-pale); border-color: var(--agua); transform: translateY(-3px); }
+
+  /* ── DIFERENCIAIS ── */
+  .features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 56px; }
+  .feature-large {
+    background: linear-gradient(135deg, var(--azul-deep), var(--azul));
+    border-radius: 20px; padding: 48px 40px; color: var(--branco);
+    display: flex; flex-direction: column; justify-content: flex-end; min-height: 340px;
+    position: relative; overflow: hidden;
+  }
+  .feature-large::before {
+    content: ''; position: absolute; top: -60px; right: -60px;
+    width: 240px; height: 240px; border-radius: 50%;
+    background: rgba(78,175,214,0.12);
+    animation: rotateSlow 20s linear infinite;
+  }
+  .feature-large::after {
+    content: ''; position: absolute; bottom: -80px; left: -40px;
+    width: 200px; height: 200px; border-radius: 50%;
+    background: rgba(78,175,214,0.07);
+  }
+  .feature-large-icon { font-size: 3rem; margin-bottom: 16px; position: relative; z-index:1; animation: dropFall .8s ease .5s both; }
+  .feature-large h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; margin-bottom: 10px; position:relative;z-index:1; }
+  .feature-large p { font-size: 0.92rem; color: rgba(255,255,255,0.7); line-height: 1.65; position:relative;z-index:1; }
+  .features-small { display: flex; flex-direction: column; gap: 24px; }
+  .feature-small {
+    background: var(--branco); border-radius: 16px; padding: 28px 28px;
+    border: 1.5px solid var(--cinza-mid); display: flex; gap: 18px; align-items: flex-start;
+    transition: all .25s;
+  }
+  .feature-small:hover { border-color: var(--agua); transform: translateX(4px); box-shadow: 0 8px 28px rgba(26,79,122,.08); }
+  .feature-small-icon {
+    width: 44px; height: 44px; background: var(--agua-pale); border-radius: 12px;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    transition: background .2s;
+  }
+  .feature-small:hover .feature-small-icon { background: var(--agua); }
+  .feature-small:hover .feature-small-icon svg { stroke: white; }
+  .feature-small-icon svg { width: 22px; height: 22px; stroke: var(--azul); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke .2s; }
+  .feature-small h4 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--azul-deep); margin-bottom: 6px; }
+  .feature-small p { font-size: 0.875rem; color: var(--cinza-text); line-height: 1.6; }
+
+  /* ── CTA BAND ── */
+  .cta-band {
+    background: linear-gradient(135deg, var(--azul-deep) 0%, var(--azul-light) 100%);
+    padding: 80px 5%; text-align: center; position: relative; overflow: hidden;
+  }
+  .cta-band::before {
+    content:''; position:absolute; top:-100px; left:50%; transform:translateX(-50%);
+    width:600px; height:600px; border-radius:50%; background:rgba(78,175,214,.06);
+    animation: pulse 4s ease-in-out infinite;
+  }
+  .cta-band h2 { font-family: var(--font-display); font-size: clamp(1.8rem,3.5vw,2.8rem); font-weight: 800; color: var(--branco); margin-bottom: 16px; position:relative; }
+  .cta-band p { font-size: 1.05rem; color: rgba(255,255,255,0.7); margin-bottom: 36px; max-width: 520px; margin-left: auto; margin-right: auto; position:relative; }
+  .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position:relative; }
+  .btn-wpp {
+    background: #25D366; color: white; padding: 15px 30px; border-radius: 10px;
+    font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex;
+    align-items: center; gap: 10px; transition: all .2s;
+  }
+  .btn-wpp:hover { background: #1EBD59; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.35); }
+  .btn-tel {
+    border: 1.5px solid rgba(255,255,255,0.3); color: var(--branco);
+    padding: 15px 30px; border-radius: 10px;
+    font-weight: 600; font-size: 0.95rem; text-decoration: none; display: inline-flex;
+    align-items: center; gap: 10px; transition: all .2s;
+  }
+  .btn-tel:hover { border-color: var(--agua); color: var(--agua); }
+
+  /* ── CONTATO ── */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .contact-info-list { display: flex; flex-direction: column; gap: 24px; margin-top: 36px; }
+  .contact-item { display: flex; gap: 16px; align-items: flex-start; }
+  .contact-icon {
+    width: 46px; height: 46px; background: var(--agua-pale); border-radius: 12px;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    transition: background .2s, transform .2s;
+  }
+  .contact-item:hover .contact-icon { background: var(--agua); transform: scale(1.1); }
+  .contact-item:hover .contact-icon svg { stroke: white; }
+  .contact-icon svg { width: 22px; height: 22px; stroke: var(--azul); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: stroke .2s; }
+  .contact-item-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--cinza-text); margin-bottom: 4px; }
+  .contact-item-val { font-size: 0.95rem; font-weight: 600; color: var(--azul-deep); }
+  .contact-item-val a { color: inherit; text-decoration: none; transition: color .2s; }
+  .contact-item-val a:hover { color: var(--azul-light); }
+  .contact-form {
+    background: var(--cinza-bg); border-radius: 20px; padding: 40px 36px;
+    border: 1.5px solid var(--cinza-mid);
+  }
+  .contact-form h3 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--azul-deep); margin-bottom: 24px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+  .form-group label { font-size: 0.82rem; font-weight: 600; color: var(--cinza-text); }
+  .form-group input, .form-group select, .form-group textarea {
+    background: var(--branco); border: 1.5px solid var(--cinza-mid);
+    border-radius: 10px; padding: 12px 14px;
+    font-family: var(--font-body); font-size: 0.9rem; color: var(--cinza-dark);
+    outline: none; transition: border-color .2s, box-shadow .2s;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--agua); box-shadow: 0 0 0 3px rgba(78,175,214,.15);
+  }
+  .form-group textarea { resize: vertical; min-height: 90px; }
+  .btn-submit {
+    width: 100%; background: var(--azul); color: white;
+    padding: 14px; border-radius: 10px; border: none; cursor: pointer;
+    font-family: var(--font-display); font-size: 0.95rem; font-weight: 700;
+    transition: background .2s, transform .15s; margin-top: 4px;
+  }
+  .btn-submit:hover { background: var(--azul-light); transform: translateY(-1px); }
+
+  /* ── FOOTER ── */
+  footer { background: var(--azul-deep); padding: 60px 5% 32px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; max-width: 1200px; margin: 0 auto 48px; }
+  .footer-logo-img { height: 36px; width: auto; margin-bottom: 16px; opacity: .85; }
+  .footer-brand p { font-size: 0.88rem; color: rgba(255,255,255,0.5); line-height: 1.7; max-width: 280px; }
+  .footer-col-title { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); margin-bottom: 16px; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a { color: rgba(255,255,255,0.65); font-size: 0.88rem; text-decoration: none; transition: color .2s, padding-left .2s; }
+  .footer-links a:hover { color: var(--agua); padding-left: 6px; }
+  .footer-bottom {
+    max-width: 1200px; margin: 0 auto;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 28px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .footer-bottom p { font-size: 0.8rem; color: rgba(255,255,255,0.35); }
+  .footer-bottom .crea { font-size: 0.8rem; color: rgba(255,255,255,0.45); }
+  .footer-bottom .crea strong { color: var(--agua); }
+
+  /* ── FLOAT WPP ── */
+  .float-wpp {
+    position: fixed; bottom: 28px; right: 28px; z-index: 99;
+    width: 58px; height: 58px; background: #25D366; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+    text-decoration: none; transition: transform .2s;
+  }
+  .float-wpp::before {
+    content:''; position:absolute; inset:0; border-radius:50%;
+    background:#25D366; animation: waterRipple 2.5s ease-out infinite;
+  }
+  .float-wpp:hover { transform: scale(1.12); }
+  .float-wpp svg { width: 28px; height: 28px; fill: white; position:relative; z-index:1; }
+
+  /* ── PROGRESS BAR ── */
+  .scroll-progress {
+    position: fixed; top: 0; left: 0; height: 3px; z-index: 200;
+    background: linear-gradient(90deg, var(--agua), var(--accent));
+    width: 0%; transition: width .1s;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .hero-visual { display: none; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+    .about-numbers { grid-template-columns: repeat(2,1fr); }
+  }
+  @media (max-width: 600px) {
+    .services-grid, .about-numbers { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .strip { gap: 20px; }
+    .hero-stats { gap: 20px; }
+    nav { padding: 0 4%; }
+    .section { padding: 64px 4%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress" role="progressbar" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav id="mainNav" role="navigation" aria-label="Menu principal">
+  <a class="nav-logo" href="#" aria-label="Hidronort – Página inicial">
+    <img src="logo-site.png" alt="Hidronort e Águas Claras – Poços Artesianos" loading="eager">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#equipamentos">Equipamentos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a class="nav-cta" href="https://wa.me/554335573232" rel="noopener">Solicitar Orçamento</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-label="Hidronort – Poços Artesianos em Arapoti-PR">
+  <div class="hero-bg-anim" aria-hidden="true">
+    <div class="drop"></div>
+    <div class="drop"></div>
+    <div class="drop"></div>
+    <div class="ripple-ring"></div>
+    <div class="ripple-ring"></div>
+  </div>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="hero-badge-dot"></span>Há mais de 25 anos no mercado</div>
+      <h1>Água limpa,<br><em>direto da terra</em><br>até você.</h1>
+      <p>Perfuração, manutenção e regularização de poços artesianos em Arapoti e toda a região. Tecnologia rotopneumática e equipe especializada para garantir água de qualidade na sua propriedade.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="https://wa.me/554335573232" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          Falar pelo WhatsApp
+        </a>
+        <a class="btn-secondary" href="#servicos">Ver serviços</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">25<span>+</span></div>
+          <div class="hero-stat-label">Anos de experiência</div>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div>
+          <div class="hero-stat-num"><span>+</span>mil</div>
+          <div class="hero-stat-label">Poços perfurados</div>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div>
+          <div class="hero-stat-num">PR</div>
+          <div class="hero-stat-label">Arapoti e região</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-facade-wrap">
+        <img src="c54f245a-f317-43bd-85e3-a5150f5a5bdc-1280x960.jpg" alt="Fachada da Hidronort e Águas Claras em Arapoti-PR" loading="eager">
+        <div class="hero-facade-overlay">
+          <div class="facade-overlay-addr">
+            <strong>Arapoti – PR</strong>
+            Av. Osvaldo Ploguer, 630 · Pq. Industrial
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip" role="list" aria-label="Credenciais">
+  <div class="strip-item" role="listitem">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+    Geólogo Responsável CREA-PR
+  </div>
+  <div class="strip-item" role="listitem">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+    Parceria Águas Claras
+  </div>
+  <div class="strip-item" role="listitem">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+    Sistema Rotopneumático
+  </div>
+  <div class="strip-item" role="listitem">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07 5.18 2 2 0 015.05 3h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 10.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    (43) 3557-3232
+  </div>
+</div>
+
+<!-- SERVIÇOS -->
+<section class="section services-bg" id="servicos" aria-labelledby="servicos-title">
+  <div class="section-inner">
+    <div class="section-label reveal">O que fazemos</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px">
+      <div>
+        <h2 class="section-title reveal reveal-delay-1" id="servicos-title">Soluções completas<br>em recursos hídricos</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Do primeiro estudo à regularização final, cuidamos de cada etapa com responsabilidade técnica e agilidade.</p>
+      </div>
+      <a class="btn-primary reveal reveal-delay-2" href="#contato" style="background:var(--azul);color:white;white-space:nowrap">Solicitar orçamento</a>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M7 7l5-5 5 5"/><path d="M7 17l5 5 5-5"/></svg>
+        </div>
+        <h3>Perfuração de Poços</h3>
+        <p>Perfuramos poços artesianos para residências, chácaras, sítios, fazendas, granjas, indústrias, hotéis, condomínios, postos e fontes de água mineral. Sistema rotopneumático de alta performance.</p>
+        <span class="service-tag">Rotopneumático</span>
+      </article>
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3>Manutenção e Limpeza</h3>
+        <p>Equipes com veículos equipados com guincho e torre para retirada e reinstalação de bombas submersas. Serviço rápido e eficiente para manter seu poço sempre em pleno funcionamento.</p>
+        <span class="service-tag">Bomba Submersa</span>
+      </article>
+      <article class="service-card reveal reveal-delay-3">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Outorga e Licenciamento</h3>
+        <p>Regularizamos a documentação legal do uso do recurso hídrico junto ao Instituto Água e Terra (IAT), incluindo licenciamento ambiental completo para seu empreendimento.</p>
+        <span class="service-tag">IAT – Paraná</span>
+      </article>
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V10M8 20V4M12 20v-8M16 20V7M20 20v-4"/></svg>
+        </div>
+        <h3>Análise da Água</h3>
+        <p>Análises laboratoriais da qualidade da água de forma simples, rápida e confiável. Resultado técnico para garantir que a água do seu poço está dentro dos padrões de potabilidade.</p>
+        <span class="service-tag">Laudo Técnico</span>
+      </article>
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3>Fornecimento de Bombas</h3>
+        <p>Comercializamos bombas submersas de alta qualidade das melhores marcas do mercado: Ebara, Leão e Franklin Electric. Equipamentos com garantia e suporte técnico especializado.</p>
+        <span class="service-tag">Ebara · Leão · Franklin</span>
+      </article>
+      <article class="service-card reveal reveal-delay-3">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Atendimento Empresarial</h3>
+        <p>Soluções hídricos para todos os portes de negócio: indústrias, leiterias, estâncias e condomínios. Planejamento técnico personalizado com geólogo responsável credenciado pelo CREA-PR.</p>
+        <span class="service-tag">CREA – PR</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="section" id="sobre" aria-labelledby="sobre-title">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <div class="section-label reveal">Nossa História</div>
+        <h2 class="section-title reveal reveal-delay-1" id="sobre-title">25 anos cavando<br>o caminho certo</h2>
+        <p class="section-subtitle reveal reveal-delay-2" style="margin-bottom:0">Uma trajetória construída poço a poço, colônia a colônia, sempre perto de quem precisa de água de qualidade.</p>
+        <div class="about-timeline" style="margin-top:40px">
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-left"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+            <div class="timeline-content">
+              <div class="timeline-year">1999 – Fundação</div>
+              <p>A <strong>Hidronort</strong> nasce em Arapoti – PR com uma máquina percussora, focada em poços rasos e atendendo as primeiras famílias da região.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-left"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+            <div class="timeline-content">
+              <div class="timeline-year">2001 – Tecnologia</div>
+              <p>Adoção do sistema <strong>rotopneumático</strong>, permitindo perfurações mais profundas e expansão para as colônias holandesas e toda a região norte do Paraná.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal reveal-delay-3">
+            <div class="timeline-left"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+            <div class="timeline-content">
+              <div class="timeline-year">2019 – Parceria</div>
+              <p>Firmamos parceria estratégica com a empresa <strong>Águas Claras</strong>, ampliando a capacidade de atendimento e garantindo excelência em todo o processo.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal reveal-delay-4">
+            <div class="timeline-left"><div class="timeline-dot"></div></div>
+            <div class="timeline-content">
+              <div class="timeline-year">Hoje</div>
+              <p>Referência regional em poços artesianos, com geólogo responsável credenciado e equipe dedicada a oferecer <strong>água de qualidade</strong> para todos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="about-numbers">
+          <div class="about-number-card reveal reveal-delay-1">
+            <div class="about-number-val">25<sup>+</sup></div>
+            <div class="about-number-desc">Anos de atuação no mercado</div>
+          </div>
+          <div class="about-number-card reveal reveal-delay-2">
+            <div class="about-number-val" style="color:var(--agua)">PR</div>
+            <div class="about-number-desc">Arapoti e toda a região norte do Paraná</div>
+          </div>
+          <div class="about-number-card reveal reveal-delay-3">
+            <div class="about-number-val">3</div>
+            <div class="about-number-desc">Pilares: perfuração, manutenção e regularização</div>
+          </div>
+          <div class="about-number-card reveal reveal-delay-4">
+            <div class="about-number-val" style="color:var(--accent)">IAT</div>
+            <div class="about-number-desc">Regularização junto ao Instituto Água e Terra – PR</div>
+          </div>
+        </div>
+        <div class="about-certs reveal reveal-delay-2">
+          <div class="cert-item">
+            <span class="cert-label">Geólogo Responsável</span>
+            <span class="cert-value">Wilson R. P. Silvestre</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-label">Registro</span>
+            <span class="cert-value agua">CREA-PR 30.219/D</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-label">Parceira</span>
+            <span class="cert-value">Águas Claras</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-label">Sede</span>
+            <span class="cert-value">Arapoti – PR</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="section services-bg" id="equipamentos" aria-labelledby="equip-title">
+  <div class="section-inner">
+    <div class="section-label reveal">Por que escolher a Hidronort</div>
+    <h2 class="section-title reveal reveal-delay-1" id="equip-title">O que nos diferencia</h2>
+    <div class="features-grid">
+      <div class="feature-large reveal reveal-delay-1">
+        <div class="feature-large-icon" aria-hidden="true">💧</div>
+        <h3>Tecnologia rotopneumática</h3>
+        <p>Desde 2001, operamos com o sistema rotopneumático — o mais eficiente para perfurações em rochas cristalinas do Paraná, garantindo poços mais profundos, estáveis e produtivos.</p>
+      </div>
+      <div class="features-small">
+        <div class="feature-small reveal reveal-delay-2">
+          <div class="feature-small-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <div>
+            <h4>Equipe própria e equipada</h4>
+            <p>Veículos com guincho e torre para serviços de manutenção e substituição de bombas submersas com segurança e agilidade.</p>
+          </div>
+        </div>
+        <div class="feature-small reveal reveal-delay-3">
+          <div class="feature-small-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4>Regularização completa</h4>
+            <p>Cuidamos de outorga e licença ambiental junto ao IAT para que seu poço esteja 100% legal e sem riscos de multas.</p>
+          </div>
+        </div>
+        <div class="feature-small reveal reveal-delay-4">
+          <div class="feature-small-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <div>
+            <h4>Geólogo credenciado CREA-PR</h4>
+            <p>Responsabilidade técnica em todos os projetos, com emissão de laudos e relatórios oficiais para sua segurança.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label reveal" style="margin-top:64px">Equipamentos parceiros</div>
+    <h2 class="section-title reveal reveal-delay-1" style="font-size:1.6rem">Marcas que garantimos</h2>
+    <div class="brands-row">
+      <div class="brand-pill reveal reveal-delay-1">EBARA</div>
+      <div class="brand-pill reveal reveal-delay-2">LEÃO</div>
+      <div class="brand-pill reveal reveal-delay-3">FRANKLIN ELECTRIC</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band" role="complementary" aria-label="Chamada para ação">
+  <h2 class="reveal">Pronto para ter água<br>de qualidade na sua propriedade?</h2>
+  <p class="reveal reveal-delay-1">Fale com nossa equipe agora mesmo. Atendemos residências, fazendas, empresas e condomínios em Arapoti e toda a região.</p>
+  <div class="cta-actions reveal reveal-delay-2">
+    <a class="btn-wpp" href="https://wa.me/554335573232" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.527 5.843L.057 23.5l5.819-1.525A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.95 0-3.77-.525-5.33-1.44l-.381-.226-3.452.905.921-3.368-.249-.396A9.79 9.79 0 012.182 12c0-5.418 4.4-9.818 9.818-9.818 5.418 0 9.818 4.4 9.818 9.818 0 5.418-4.4 9.818-9.818 9.818z"/></svg>
+      WhatsApp Agora
+    </a>
+    <a class="btn-tel" href="tel:4335573232">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 5.18 2 2 0 015.04 3h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 10.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      (43) 3557-3232
+    </a>
+  </div>
+</div>
+
+<!-- CONTATO -->
+<section class="section" id="contato" aria-labelledby="contato-title">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label reveal">Fale Conosco</div>
+        <h2 class="section-title reveal reveal-delay-1" id="contato-title">Solicite um orçamento sem compromisso</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Nossa equipe analisa sua necessidade e entra em contato rapidamente com a melhor solução para seu caso.</p>
+        <div class="contact-info-list">
+          <address class="contact-item reveal reveal-delay-1" style="font-style:normal">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 5.18 2 2 0 015.04 3h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.09 10.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-label">Telefone / WhatsApp</div>
+              <div class="contact-item-val"><a href="tel:4335573232">(43) 3557-3232</a></div>
+            </div>
+          </address>
+          <address class="contact-item reveal reveal-delay-2" style="font-style:normal">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-label">E-mail</div>
+              <div class="contact-item-val"><a href="mailto:contato@hidronort.com.br">contato@hidronort.com.br</a></div>
+            </div>
+          </address>
+          <address class="contact-item reveal reveal-delay-3" style="font-style:normal">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-label">Endereço</div>
+              <div class="contact-item-val">Av. Osvaldo Ploguer, 630<br>Pq. Industrial – Arapoti, PR</div>
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-2">
+        <h3>Envie sua mensagem</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Seu nome completo" autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="tel" placeholder="(43) 9 0000-0000" autocomplete="tel">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="seu@email.com" autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="servico">Tipo de serviço</label>
+          <select id="servico">
+            <option value="">Selecione...</option>
+            <option>Perfuração de Poço Novo</option>
+            <option>Manutenção / Limpeza</option>
+            <option>Análise de Água</option>
+            <option>Outorga / Licenciamento</option>
+            <option>Fornecimento de Bomba</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" placeholder="Descreva sua necessidade ou propriedade..."></textarea>
+        </div>
+        <button class="btn-submit" type="button">Enviar mensagem →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img class="footer-logo-img" src="logo-site.png" alt="Hidronort Poços Artesianos">
+      <p>Especialistas em poços artesianos há mais de 25 anos. Tecnologia, responsabilidade técnica e compromisso com a qualidade da água para você e seu negócio.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Serviços</div>
+      <ul class="footer-links">
+        <li><a href="#servicos">Perfuração de Poços</a></li>
+        <li><a href="#servicos">Manutenção e Limpeza</a></li>
+        <li><a href="#servicos">Análise da Água</a></li>
+        <li><a href="#servicos">Outorga e Licenciamento</a></li>
+        <li><a href="#servicos">Fornecimento de Bombas</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contato</div>
+      <ul class="footer-links">
+        <li><a href="tel:4335573232">(43) 3557-3232</a></li>
+        <li><a href="mailto:contato@hidronort.com.br">contato@hidronort.com.br</a></li>
+        <li><a href="https://wa.me/554335573232" rel="noopener">WhatsApp</a></li>
+        <li><a href="#">Instagram @hidronort</a></li>
+      </ul>
+      <div style="margin-top:20px">
+        <div class="footer-col-title">Endereço</div>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.45);line-height:1.6">Av. Osvaldo Ploguer, 630<br>Pq. Industrial – Arapoti, PR</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Hidronort Poços Artesianos. Todos os direitos reservados.</p>
+    <p class="crea">Geólogo Responsável: <strong>Wilson R. P. Silvestre – CREA-PR 30.219/D</strong></p>
+  </div>
+</footer>
+
+<!-- FLOAT WPP -->
+<a class="float-wpp" href="https://wa.me/554335573232" rel="noopener" aria-label="Contato via WhatsApp – Hidronort" title="WhatsApp Hidronort">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.527 5.843L.057 23.5l5.819-1.525A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.95 0-3.77-.525-5.33-1.44l-.381-.226-3.452.905.921-3.368-.249-.396A9.79 9.79 0 012.182 12c0-5.418 4.4-9.818 9.818-9.818 5.418 0 9.818 4.4 9.818 9.818 0 5.418-4.4 9.818-9.818 9.818z"/></svg>
+</a>
+
+<script>
+  // Scroll progress bar
+  const progress = document.getElementById('scrollProgress');
+  window.addEventListener('scroll', () => {
+    const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    progress.style.width = scrolled + '%';
+  }, { passive: true });
+
+  // Nav scroll effect
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+</script>
+</body>
+</html>
